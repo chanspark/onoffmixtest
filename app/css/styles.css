@@ -44,7 +44,7 @@
   font-family: 'Baloo Bahina', cursive; }
 
 .font--2 {
-  font-family: 'Homemade Apple', cursive; }
+  font-family: 'Permanent Marker', cursive; }
 
 .font--3 {
   font-family: 'Libre Baskerville', serif; }
@@ -272,7 +272,8 @@ body {
   padding: 15px;
   border-radius: 5px;
   box-sizing: border-box;
-  border-width: 1px; }
+  border-width: 1px;
+  overflow: hidden; }
 
 .header {
   height: 40px;
@@ -297,10 +298,10 @@ body {
   color: #329af0; }
 
 .content {
-  width: 30%;
-  display: block;
+  width: 32%;
+  float: left;
   margin-top: 15px;
-  margin-right: 5%;
+  margin-right: 2%;
   padding: 10px;
   padding-bottom: 0;
   border-width: 1px;
@@ -308,12 +309,15 @@ body {
   box-sizing: border-box;
   overflow: hidden; }
 
+.content--last {
+  margin-right: 0; }
+
 .content__font-sample {
   width: 100%;
+  height: 200px;
   font-size: 24px;
-  white-space: nowrap;
-  display: block;
-  height: 100px; }
+  word-break: break-all;
+  letter-spacing: 1px; }
 
 .content__font-title {
   font-size: 16px;
