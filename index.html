@@ -14,26 +14,32 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </head>
 
-<body>
+<body class="font--default">
     <div class="wrap">
         <div class="header">
             <h1 class="header__title">웹폰트</h1>
             <div class="header__options">
                 <ul>
-                    <li>인기순</li>
-                    <li>최근순</li>
-                    <li>가나다순</li>
+                    <li class="header__options--active">
+                        <a href="#0famous">인기순</a>
+                    </li>
+                    <li>
+                        <a href="#0recent">최근순</a>
+                    </li>
+                    <li>
+                        <a href="#0letter">가나다순</a>
+                    </li>
                 </ul>
             </div>
         </div>
         <div class="content">
-            <div class="content__font">
-                <p class="content__font__sample">ABCDEFGHIJKLMNOPQRSTUVWXYNZabcdefghijklmnopqrstuvwxyz</p>
-                <p class="content__font__title">웹폰트 타이틀</p>
-                <div class="content__font__footer">
-                    <button class="btn" onclick="viewFont()">view sample</button>
+            <!--<div class="content__font">-->
+                <p class="content__font-sample font--1">ABCDEFGHIJKLMNOPQRSTUVWXYNZabcdefghijklmnopqrstuvwxyz</p>
+                <p class="content__font-title">Baloo Bahina</p>
+                <div class="content__footer">
+                    <button class="btn btn--viewfont" onclick="viewFont()">view</button>
                 </div>
-            </div>
+            <!--</div>-->
         </div>
     </div>
 

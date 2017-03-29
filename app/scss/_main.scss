@@ -1,0 +1,88 @@
+body {
+    background: $oc-gray-1;
+    font-size: $font-normal;
+}
+
+.wrap {
+    @extend .border;
+    background: $oc-white;
+    width: 720px;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border-width: 1px;
+    // transition: all 3ms;
+}
+
+.header {
+    height: 40px;
+    overflow: hidden;
+    @extend .border;    
+    border-bottom-width: 1px;
+}
+.header__title {
+    float: left;
+    font-size: $font-big;
+    line-height: 40px;
+}
+.header__options {
+    float: right;
+    line-height: 40px;
+    li {
+        display: inline-block;
+        margin: 0 10px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+}
+.header__options--active {
+    a {
+        color: $oc-blue-5; 
+    }
+}
+
+.content {
+    @extend .border;    
+    width: 30%;
+    display: block;
+    margin-top: 15px;
+    margin-right: 5%;
+    padding: 10px;
+    padding-bottom: 0;
+    border-width: 1px;
+    border-bottom-width: 2px;
+    box-sizing: border-box;
+    overflow: hidden;
+    // border: 1px solid $color-
+}
+.content__font-sample {
+    // line-break: normal;
+    width: 100%;
+    font-size: $font-big;
+    white-space: nowrap;
+    display: block;
+    height: 100px;
+}
+.content__font-title {
+    font-size: $font-medium;
+    margin: 10px 0;
+}
+
+.content__footer {
+    @extend .border;
+    height: 50px;
+    border-top-width: 1px;
+    background: $oc-gray-1;
+    margin: 0 -10px;
+}
+
+.btn--viewfont {
+    width: 80px;
+    height: 30px;
+    background: $oc-teal-5;
+    color: $oc-white;
+    float: right;
+    margin: 10px;
+}

@@ -1,27 +1,325 @@
-// colors(using open-colors no.7)
+ // colors(using open-colors no.7)
 .color--gray {
     color: $oc-gray-7;
 }
 
+.color--red {
+    color: $oc-red-7;
+}
+
+.color--pink {
+    color: $oc-pink-7;
+}
+
+.color--grape {
+    color: $oc-grape-7;
+}
+
+.color--violet {
+    color: $oc-violet-7;
+}
+
+.color--indigo {
+    color: $oc-indigo-7;
+}
+
+.color--blue {
+    color: $oc-blue-7;
+}
+
+.color--cyan {
+    color: $oc-cyan-7;
+}
+
+.color--teal {
+    color: $oc-teal-7;
+}
+
+.color--green {
+    color: $oc-green-7;
+}
+
+.color--lime {
+    color: $oc-lime-7;
+}
+
+.color--yellow {
+    color: $oc-yellow-7;
+}
+
+.color--orange {
+    color: $oc-orange-7;
+}
+
 // fonts
+$font-big: 24px;
+$font-medium: 16px;
+$font-normal: 12px;
+$font-small: 10px;
 .font--default {
     font-family: 'Malgun Gothic', sans-serif;
 }
 .font--1 {
     font-family: 'Baloo Bahina', cursive;
 }
+
 .font--2 {
     font-family: 'Homemade Apple', cursive;
 }
+
 .font--3 {
     font-family: 'Libre Baskerville', serif;
 }
+
 .font--4 {
     font-family: 'Playfair Display', serif;
 }
+
 .font--5 {
     font-family: 'Space Mono', monospace;
 }
+
 .font--6 {
     font-family: 'Titillium Web', sans-serif;
+}
+
+// border
+.border {
+    border-style: solid;
+    border-color: $oc-gray-4;
+    // border: 1px solid $oc-gray-4;
+}
+
+// btn
+.btn {
+    cursor: pointer;
+    // font-size: $font-small;
+    //  font: $font-normal 14px/14px 'Spoqa Han Sans', sans-serif;
+    // color: white;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    // line-height: 36px;
+    padding: 0 10px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 5px;
+    box-sizing: border-box;
+    // transition-property
+    // @include border-radius(20px, 20px);
+    // @include box-sizing(border-box);
+    // @include transition-property(all);
+    // @include transition-duration(0.3s);
+}
+
+
+// reset
+body,
+button,
+table {
+    margin: 0;
+    padding: 0
+}
+
+a,
+abbr,
+acronym,
+address,
+applet,
+b,
+basefont,
+bdo,
+big,
+blockquote,
+br,
+button,
+cite,
+code,
+dd,
+del,
+dfn,
+dir,
+div,
+dl,
+dt,
+em,
+fieldset,
+font,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+i,
+iframe,
+img,
+input,
+ins,
+kbd,
+label,
+legend,
+li,
+map,
+menu,
+object,
+ol,
+option,
+p,
+pre,
+q,
+s,
+samp,
+script,
+select,
+small,
+span,
+strike,
+strong,
+sub,
+sup,
+td,
+textarea,
+th,
+tt,
+u,
+ul,
+var {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    font-weight: inherit;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+}
+
+button,
+img {
+    line-height: 1;
+    vertical-align: top;
+    border: 0
+}
+
+table {
+    width: 100%;
+    border: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    clear: both
+}
+
+hr {
+    margin: 0
+}
+
+img {
+    font-size: 1%
+}
+
+li,
+ol,
+ul {
+    list-style: none
+}
+
+button {
+    background: 0 0;
+    cursor: pointer
+}
+
+a {
+    -webkit-tap-highlight-color: transparent;
+    text-decoration: none
+}
+
+input,
+textarea {
+    outline: 0
+}
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+    content: '';
+    content: none
+}
+
+body {
+    height: 100%;
+    border: 0;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #333
+}
+
+.none {
+    width: 0;
+    height: 0;
+    display: none
+}
+
+h1 img,
+nav li a {
+    height: 100%
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both
+}
+
+.clearfix {
+    zoom: 1
+}
+
+nav li a {
+    display: block;
+    width: 100%
+}
+
+input[type=checkbox],
+input[type=radio] {
+    display: none
+}
+
+input[type=file] {
+    width: .1px;
+    height: .1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1
+}
+
+input[type=file]+label {
+    display: inline-block;
+    max-width: 80%;
+    border: 2px dashed #73879C;
+    cursor: pointer;
+    padding: .625rem 1.25rem;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #73879C
+}
+
+input[type=file]+label i {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    margin-right: 5px
+}
+
+a:active,
+a:hover,
+a:link,
+a:visited {
+    text-decoration: none;
+    color: $oc-gray-5;
 }
