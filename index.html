@@ -1,24 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+            "http://www.w3.org/TR/html4/strict.dtd">
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <title></title>
-  <!--build:css css/styles.min.css-->
-  <link rel="stylesheet" href="app/css/styles.css">
-  <link rel="stylesheet" href="app/css/print.css">
-  <!--endbuild-->
+    <meta charset="UTF-8">
+    <title>온오프믹스 프론트엔드 테스트</title>
+    <!--<link rel="stylesheet" href="app/css/open-colors.css">-->
+    <link rel="stylesheet" href="app/css/styles.css">
+  <!-- 구글 폰트 6종 추가 -->
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina|Homemade+Apple|Libre+Baskerville|Playfair+Display|Space+Mono|Titillium+Web" rel="stylesheet">
+  <!-- jQuery 1.12.4 minified ver 추가-->
+  <!-- 출처: cdnjs.com -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </head>
 
 <body>
-  This is a gulp starter!sdfsfsdfsadsdasadsfasfafsadfsadfs
-  <div class="testing">This is a gulp starthohohoer!</div>
-  
-  <!--build:js js/main.min.js -->
-  <script src="app/js/lib/a-library.js"></script>
-  <script src="app/s/lib/another-library.js"></script>
-  <script src="app/js/main.js"></script>
-  <!-- endbuild -->
+    <div class="wrap">
+        <div class="header">
+            <h1 class="header__title">웹폰트</h1>
+            <div class="header__options">
+                <ul>
+                    <li>인기순</li>
+                    <li>최근순</li>
+                    <li>가나다순</li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content__font">
+                <p class="content__font__sample">ABCDEFGHIJKLMNOPQRSTUVWXYNZabcdefghijklmnopqrstuvwxyz</p>
+                <p class="content__font__title">웹폰트 타이틀</p>
+                <div class="content__font__footer">
+                    <button class="btn" onclick="viewFont()">view sample</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--build:js js/main.min.js -->
+    <!--<script src="app/js/lib/a-library.js"></script>-->
+    <!--<script src="app/s/lib/another-library.js"></script>-->
+    <script src="app/js/main.js"></script>
+    <!-- endbuild -->
 </body>
 
 </html>
