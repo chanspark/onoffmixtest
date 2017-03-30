@@ -86,13 +86,64 @@ body {
 }
 
 // modal
+.modal {
+    width: 100%;
+    height: 100%;
+    background: rgba($oc-black, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
+.modal__content {
+    width: 320px;
+    // height: 240px;
+    margin: 50px auto;
+    padding: 10px;
+    background: $oc-white;
+    overflow: hidden;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 10px;
+}
+.modal__header {
+    @extend .border;
+    height: 40px;
+    font-size: $font-big;
+    line-height: 40px;
+}
+.modal__font {
+    @extend .border;
+    // width: 90%;
+    margin-top: 10px;
+    // margin: 10px auto;
+    font-size: $font-big;
+    word-break: break-all;
+    border-width: 1px;
+    padding: 10px;
+
+}
+.modal__footer {
+    margin-top: 10px;
+}
+.modal__footer-label {
+    font-size: $font-medium;
+}
 // btn
 .btn--viewfont {
     width: 80px;
     height: 30px;
-    background: $oc-teal-5;
-    color: $oc-white;
     float: right;
     margin: 10px;
+}
+.btn--regular {
+    width: 80px;
+    height: 30px;
+}
+.btn--primary {
+    background: $oc-teal-5;
+    color: $oc-white;
+    &:hover {
+        background: $oc-teal-7;
+    }
 }

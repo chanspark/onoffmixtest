@@ -5,17 +5,21 @@
 <head>
     <meta charset="UTF-8">
     <title>온오프믹스 프론트엔드 테스트</title>
-    <!--<link rel="stylesheet" href="app/css/open-colors.css">-->
     <link rel="stylesheet" href="app/css/styles.css">
-  <!-- 구글 폰트 6종 추가 -->
-  <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina|Permanent+Marker|Libre+Baskerville|Playfair+Display|Space+Mono|Titillium+Web" rel="stylesheet">
-  <!-- jQuery 1.12.4 minified ver 추가-->
-  <!-- 출처: cdnjs.com -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- 폰트 사이즈 슬라이더 라이브러리 css -->
+    <link rel="stylesheet" href="app/css/dragdealer.css">
+    <!-- 구글 폰트 6종 추가 -->
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina|Permanent+Marker|Libre+Baskerville|Playfair+Display|Space+Mono|Titillium+Web"
+        rel="stylesheet">
+    <!-- jQuery 1.12.4 minified ver 추가-->
+    <!-- 출처: cdnjs.com -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </head>
 
 <body class="font--default">
+    <!-- wrap 시작 -->
     <div class="wrap">
+        <!-- header -->
         <div class="header">
             <h1 class="header__title">웹폰트</h1>
             <div class="header__options">
@@ -32,64 +36,80 @@
                 </ul>
             </div>
         </div>
+        <!-- header 종료 -->
+        <!-- contents -->
         <div class="content">
             <p class="content__font-sample font--1">ABCDEFGHIJKLMNOPQRSTUVWXYNZabcdefghijklmnopqrstuvwxyz</p>
             <p class="content__font-title">Baloo Bahina</p>
             <div class="content__footer">
-                <button class="btn btn--viewfont" onclick="viewFont()">view</button>
+                <button class="btn btn--primary btn--regular fr" onclick="viewFont()">View</button>
             </div>
         </div>
         <div class="content">
             <p class="content__font-sample font--2">ABCDEFGHIJKLMNOPQRSTUVWXYNZabcdefghijklmnopqrstuvwxyz</p>
             <p class="content__font-title">Homemade Apple</p>
             <div class="content__footer">
-                <button class="btn btn--viewfont" onclick="viewFont()">view</button>
+                <button class="btn btn--primary btn--regular fr" onclick="viewFont()">View</button>
             </div>
         </div>
         <div class="content content--last">
             <p class="content__font-sample font--3">ABCDEFGHIJKLMNOPQRSTUVWXYNZabcdefghijklmnopqrstuvwxyz</p>
             <p class="content__font-title">Libre Baskerville</p>
             <div class="content__footer">
-                <button class="btn btn--viewfont" onclick="viewFont()">view</button>
+                <button class="btn btn--primary btn--regular fr" onclick="viewFont()">View</button>
             </div>
         </div>
         <div class="content">
             <p class="content__font-sample font--4">ABCDEFGHIJKLMNOPQRSTUVWXYNZabcdefghijklmnopqrstuvwxyz</p>
             <p class="content__font-title">Playfair Display</p>
             <div class="content__footer">
-                <button class="btn btn--viewfont" onclick="viewFont()">view</button>
+                <button class="btn btn--primary btn--regular fr" onclick="viewFont()">View</button>
             </div>
         </div>
         <div class="content">
             <p class="content__font-sample font--5">ABCDEFGHIJKLMNOPQRSTUVWXYNZabcdefghijklmnopqrstuvwxyz</p>
             <p class="content__font-title">Space Mono</p>
             <div class="content__footer">
-                <button class="btn btn--viewfont" onclick="viewFont()">view</button>
+                <button class="btn btn--primary btn--regular fr" onclick="viewFont()">View</button>
             </div>
         </div>
         <div class="content content--last">
             <p class="content__font-sample font--6">ABCDEFGHIJKLMNOPQRSTUVWXYNZabcdefghijklmnopqrstuvwxyz</p>
-            <p class="content__font-title">Titillium Web</p>
+            <h2 class="content__font-title">Titillium Web</h2>
             <div class="content__footer">
-                <button class="btn btn--viewfont" onclick="viewFont()">view</button>
+                <button class="btn btn--primary btn--regular fr" onclick="viewFont()">View</button>
             </div>
         </div>
+        <!-- contents 종료 -->
     </div>
+    <!-- wrap 종료 -->
 
     <!-- 모달창 -->
     <div class="modal">
         <div class="modal__content">
-            <div class="modal__header"></div>
-            <p class="modal__font">ABCDEFGHIJKLMNOPQRSTUVWXYNZabcdefghijklmnopqrstuvwxyz</p>
-            <div class="modal__footer"></div>
+            <h3 class="modal__header">클릭된 폰트명</h3>
+            <p class="modal__font ">ABCDEFGHIJKLMNOPQRSTUVWXYNZabcdefghijklmnopqrstuvwxyz</p>
+            <ul class="modal__footer">
+                <li class="fl">
+                    <h4 class="modal__footer-label">Size</h4>
+                    <div id="font-size-slider" class="dragdealer">
+                        <div class="handle red-bar">drag me</div>
+                    </div>
+                </li>
+                <li class="fr">
+                    <h4 class="modal__footer-label">Color</h4>
+                    <button class="btn btn--primary btn--regular">Pick</button>
+                </li>
+            </ul>
+
         </div>
     </div>
-
-    <!--build:js js/main.min.js -->
-    <!--<script src="app/js/lib/a-library.js"></script>-->
-    <!--<script src="app/s/lib/another-library.js"></script>-->
+    <!-- 모달창 종료 -->
     <script src="app/js/main.js"></script>
-    <!-- endbuild -->
+    <script src="app/js/lib/dragdealer.js"></script>
+    <script>
+        new Dragdealer("font-size-slider");
+    </script>
 </body>
 
 </html>
